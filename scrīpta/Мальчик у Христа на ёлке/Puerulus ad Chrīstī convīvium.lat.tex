@@ -1,0 +1,208 @@
+\documentclass[a4paper, 12pt]{article}
+
+\setcounter{tocdepth}{2}
+
+\usepackage[hidelinks, bookmarksopen=true, bookmarks=true]{hyperref}
+\usepackage{bookmark}
+
+\usepackage[latin]{babel}
+\usepackage{comment}
+\usepackage{csquotes}
+\usepackage{extsizes}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{letltxmacro}
+\usepackage{lineno}
+\usepackage{tempora}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{xcolor}
+\usepackage{xunicode}
+
+% font
+\usepackage[lining]{ebgaramond}
+\newcommand{\red}[1]{{\color{red}  {#1}}}
+
+\newcommand{\MyTitle}{\textbf{Puerulus ad Chrīstī convīvium}}
+
+% document settings
+\title{
+	\MyTitle\\
+	\large\textit{ex ``\emph{Дневник писателя}'', iānuāriō 1876}
+}
+\author{\textit{scrīpsit} Фёдор М. Достоевский \and \textit{vertit} Michele Palese}
+\date{}
+
+% headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\MyTitle}
+\rhead{\footnotesize\theauthor}
+\cfoot{\thepage}
+
+% section numbering
+\renewcommand{\thesection}{}%\Roman{section}} 
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+\titleformat*{\section}{\normalsize\bfseries}
+
+\modulolinenumbers[5]
+% line stretch
+%\renewcommand{\baselinestretch}{1.73}
+
+%footnotes enabling and disabling
+\newcommand{\sfootnote}[1]{{\EnableFootNotes\footnote{\textit{#1}}}}
+\LetLtxMacro\Oldfootnote\footnote
+\newcommand{\EnableFootNotes}{%
+	\LetLtxMacro\footnote\Oldfootnote%
+}
+\newcommand{\DisableFootNotes}{%
+	\renewcommand{\footnote}[2][]{\relax}
+}
+% footnotes size & font
+\renewcommand\linenumberfont{\normalfont\footnotesize}
+
+\interfootnotelinepenalty=10000 % do not split across pages
+
+\begin{document}
+	
+	\maketitle
+	%\break
+	
+	\DisableFootNotes
+	
+	\resetlinenumber
+\begin{linenumbers}
+	
+	\section{Puerulus ``cum manū''}
+	
+	Puerī sunt hominēs īnsolitī, illī in somnīs videntur.
+	Ante diem fēstum et in diē festō ipsō ante diem nātālis Chrīstī ego occurrēbam foris, in angulō nōtō, ūnum puerum, quī nōn plurēs quam septem annōs habēbat.
+	In terribilī algōre\footnote{algor, algōris, \textit{m} = magnum frigidum} indutus erat ferē\footnote{ferē = prope} aestīve\footnote{aestīve < aestās}, sed collum eius obstringēbātur ab aliquō obsolētō linteō\footnote{linteum, linteī, \textit{n}}, -- id significat quod aliquis eum ōrnāverat, mittēns.
+	Ille ambulābat ``cum manū''; ea est locūtiō singulāris, significat -- mendīcāre\footnote{mendīcō, mendīcās, mendīcāvī, mendīcātum, mendīcāre = pecuniam poscō}.
+	Locūtiōnem commentī sunt\footnote{commīniscor, commīnisceris, commentus sum, commīniscī = excōgitō} illī puerī ipsī.
+	Tālēs, sicut ille, multitūdō sunt, illī errant in viā vestrā et ululant aliquem quem ēdidicerant\footnote{ēdiscō = discō ut meminī};
+	sed iste nōn ululābat et loquēbātur aliquō modō innocente et īnusuēte et speī plēnus intuēbātur\footnote{intueor, intuēris, intuitus sum, intuērī = aspiciō} oculōs meōs,
+	-- igitur certē, nuper opus suscēpit\footnote{opus suscipiō = laborare incipiō}.
+	Interrogātiōnibus meīs dīxit, sibi soror esse, sine opere, aegra;
+	fortasse, et vērus est, sed ego modo cognōvī posteā, istōrum puerōrum magnam multitūdinem esse:
+	eōs mittunt ``cum manū'' etsī terribilis algōr est, et sī nihil percipient, forsit eōs plāgae exspectent\footnote{eōs plāgae exspectent = verberentur}.
+	Assibus perceptīs, puer revertitur manūs rubrās, frigore rigentēs\footnote{frigore rigēns = ob frigorem movī nōn potest} habēns in aliquem hypogēō\footnote{hypogēum, hypogēī, \textit{n} = pars domūs subterranea}, ubi ēbrius fit quidam grex dissolūtōrum, ex illōrum, quī ``opus dētrectātā in fābriculā vespere dieī sāturnī, iterum opus suscipiunt nōn ante vesperem dieī mercuriī''.
+	Illīc, in hypogēīs, ēbriae fīunt cum eīs ēsurientēs\footnote{ēsuriēns, ēsurientis = is qui cibō carēt} et verberatae uxōrēs, et illīc gement\footnote{gemō, gemis, gemuī, gemitum, gemere $\approx$ vāgiō} ēsurientēs īnfantēs eōrum.
+	Vodca, et sordēs\footnote{sordēs = rēs sordidae}, et dissolūtiō, ac precipuae, vodca.
+	Puerulum assēs perceptās ferentem statim in gāneam mittunt, et ille affert vīnum.
+	Lūdentēs illō quoque aliquandō īnfundunt in ōs cotylam\footnote{cotyla $\approx$ 0.3 L} et rīdent, cum ille, exanimātus, prōcumbit prope sine memoriā humī,
+	\begin{center}\textit{
+		...et in ōs mihi pessimam vodcam\\
+		crūdēliter īnfundēbat...}\sfootnote{cfr. ``\emph{Детство}'', \emph{Н. А. Некрасов}}
+	\end{center}
+	
+	Cum ille crēscit, eum subitō pellunt in aliquam fābriculam, sed omnia, ab illō merētur, ille iterum cōgitur\footnote{cōgō, cōgis, coēgī, coāctum, cōgere $\approx$ debe\={o´}} afferre ad dissolūtōs, et illī rūrsus omnia dissipant bibendō.
+	Sed quidem ante opus fābriculae istī puerī fiunt perfectī scelestī\footnote{scelestus, scelestī $\approx$ praedō, latrō}.
+	Illī errant in oppidō et cognōvērunt tālēs locōs in variīs hypogēīs, in quōs possunt īnsinuāre\footnote{īnsinuō, īnsinuās, īnsinuāvī, īnsinuātum, īnsinuāre = intrō ā nēmine cōnspectus}, et ubi possunt dormīre et ā nēmine cōnspicī.
+	Ūnus ex eōrum pernoctāvit\footnote{pernoctō, pernoctās, pernoctāvī, pernoctātum, pernoctāre $\approx$ dormiō} per seriem noctium apud ūnum iānitorēm in aliquā cistā, et ille eum nōn invēnit.
+	Sīc, latrunculī fiunt.
+	Fūrta fiunt assidua cūra puerīs octō annōrum quoque, aliquandō etiam sine intellēctiōne eōrum āctiōnum nēquitiae.
+	Tandem patiuntur omnia -- famem, frīgōrem, plagae, -- modo ūnā causā, lībertātis causā, et fugiunt ab illōrum dissolūtīs ut ipsī sōlī vagent.
+	Hic ferus animāns\footnote{animāns, animāntis = ille qui vīvit} aliquandō nihil intellegit, nec ubi habitat, nec cuius nātiōnis ille est, deusne sit, sitne rex; quaedam dē eīs dīcunt, qua audīta nōn vēra videntur, et, utcumque, vēra sunt.
+	
+	
+	
+	\section{\MyTitle}
+	
+	Sed ego sum scrīptor, et, ut vidētur, ipse commentus sum ūnam fabulam. Cūr scrībō: ``vidētur'', ipse enim sciō fortasse, me eam commentum esse, sed putō hoc alicubi et quondam accidisse, hoc ipsum accidisse vespere ante nātālem Chrīstī, in \textit{aliquā} magnā urbe et in terribilī algōre.
+	
+	\vspace{3ex}
+	
+	Mihi vidētur, in hypogēō esse puer, adhūc parvus, sex annōrum aut etiam pauciōrum.
+	Hic puer experrēctus\footnote{expergīscor, expergīscī, experrēctus sum, expergīscī = ē somnō excitor} erat māne in frigidō et hūmidō hypogēō.
+	Indutus erat aliquā subūculā\footnote{subūcula, subūculae, \textit{f} $\approx$ vestis} et tremēbat.
+	Spīritus eius ex ōre ēvolābat et in album vapōrem mūtābāt, et ille, sedēns in angulō super cistā, ob taedium exspīrābat hunc vapōrem ex ōre et laetābātur, aspiciēns quōmodo ēvolābat.
+	Sed is multō cupiēbat ēsse.
+	Is ā māne nonnumquam adierat ad tabulam, ubi super tenuissimō tapētī\footnote{tapēte, tapētis, \textit{n}} et super aliquā sarcinā\footnote{sarcina, sarcinae, \textit{f}} sub capite prō pulvīnō iacēbat aegra māter eius.
+	Quōmodo illa hūc cessit?
+	Certē, advēcta erat cum fīliō suō ab aliō oppidō et repente in morbum incesserit.
+	Dominam angulōrum comprehenderant pūblicī ministrī\footnote{pūblicī ministrī, \textit{m} = illī quī scelestōs comprehendunt} ante duōs diēs;
+	inquilīnī\footnote{inquilīnus, inquilīnī, \textit{m} = habitāns} abierant, ob diēs fēstōs, modo ūnus dissolūtus mānsit, et iam diēm ebriissimus iacēbat ut mortuus, nōn exspectāverat diem fēstum.
+	In angulō oppositō gemēbat ob dolōrem articulōrum aliqua octōgēnāria\footnote{octōgēnārius, octōgēnāria, octōgēnārium = octōgintā annōrum} vetula, quae fuerat aliquandō et alicubi puerōrum cūstōs, et nunc moriēbātur sōla, cum singultū flēns, ringēns et ululāns puerō, sicut ille incēpit metuere se prope illae angulum appropinquāre.
+	Ad bibendum repperit in vestibulō, sed pānis crustās nusquam repperit, et iam noviēs\footnote{noviēs < IX} adīvit ut excitāret mātrem suam, et nunc simplus\footnote{simplus < I} adībat.
+	Incēpit eum terrēre, tandem, obscūritās: multō enim ante factus est vesper, et lampadēs nōn accenditur.
+	Attrectāns\footnote{attrectō, attrectās, attrectāvī, attrectātum = manū tangō} vultum mātris, ille stupefactus est, quia illa immōta est et facta est tam frīgida, quam parietēs.
+	``Multus frīgus est hīc'', -- cōgitāvit ille, stābit paulum temporis, īnscius habēns manum suam in umerō exanimis\footnote{exanimis, exanimis = mortuus}, posthāc exspirāvit ad digitulōs suōs, ut tepefēcerit\footnote{tepefaciō, tepefacis, tepefēcī, tepefactum, tepefacere = calidum faciō} illōs, et subitō, repperit suum parvum capitis tegumen\footnote{capitis tegumen, capitis teguminis, \textit{n} = illud quod in capite pōnitur}, et quiētē, attrectāns, īvit ex hypogēō.
+	Ille certē et anteā īsset, sed timēbat canem, qui sūrsum, in gradibus, tōtum diem ante iānuam vīcīnōrum\footnote{vīcīnus, vīcīnī, \textit{m} = ille qui prope habitat} erat.
+	Sed canis iam aberat, et ille subitō exīvit in viam.
+	
+	Domine, quālis urbs!
+	Numquam ille vīderat aliquem similem.
+	Illīc, unde advectus erat, nocte est tālis nigram obscūritās, ūna lampas cuique ūnae viae.
+	Ligneae humilēs domūs clauduntur valvīs\footnote{valvae, valvārum, \textit{f} = illae quae ante fenestrās pōnuntur ut clausae sint};
+	Foris, cum obscūrātur, -- nēmō est, omnēs sē inclūdunt domi, et modo ululant solidī\footnote{solidus, solida, solidum $\approx$ magnus} gregēs canum, centum et m\={i}lia eōrum, ululānt tōtam noctem.
+	Sed illīc saltem\footnote{saltem $\approx$ quidem} tam calidum erat et dabant eī ut ēsset, sed h\={i}c -- ō domine, sī ēsse possit!
+	Et quantus hīc strepitus et fragor, quanta lūx et quot hominēs, equī et vehicula, et algor, algor!
+	Vapor concrētus\footnote{concrētus, concrēta, concrētum = gelātus} ēvapōrat ab equīs correntibus, ex calide spīrantēs rōstrīs\footnote{rōstrum, rōstrī, \textit{n} = ōs} eōrum; quamv\={i}s mollis nix sit, sonant illīdentēs lapidibus soleae ferrae, et omnēs tam vehementer sē impellunt, et, ō domine, quam ēsse vult, etiam modo aliquem frustulum\footnote{frustulum, frustulī, \textit{n} = parva pars cibī}, et quam dolent nunc digitulī.
+	Iūxtā illum praeterīvit cūstōs ōrdinis et in diversum convertit, ut ne vidēret puerulum.
+	
+	Ecce alia via, -- ō quam lata est! Ecce hīc nunc calcor fortasse; ō quam magnā vōce omnēs clāmant, currunt et vehuntur, et lūx, lūx!
+	Et quid est istud?
+	Ūh, quam magnum specularium\footnote{specularium,speculariī, \textit{n} = fenestra}, et trāns specularium est conclāve, et in conclāvī est arbor altus ūsque ad tēctum;
+	illa est abiēs\footnote{abiēs, abietis, \textit{f}}, et quot lūcēs in eā sunt, quot aureae scidulae\footnote{scidula, scidulae, \textit{f} $\approx$ papȳrus} et māla, et circum sunt etiam pūpae et parvī equī;
+	et in conclāvī currunt puerī, ēlegantēs, mundī, rīdent et lūdunt, et edunt, et bibunt aliquid.
+	Ecce haec puella incēpit cum puerō saltāre, quam pulchra puella!
+	Ecce mūsica, trāns specularium audītur.
+	Puer aspicit, mīrātur, et rīdet, sed illō dolent iam digitulī et pedum, et manuum factī sunt plānē rubrī, iam flectī nōn possunt et dolet eōs movēre.
+	Et subitō puer meminit, sibi dolere digitulī, flēvit et praecurrit, et ecce iterum videt trāns aliud specularium conclāvem, iterum illīc arborēs sunt, sed in mēnsīs sunt pirogī\sfootnote{pirogī, pirogōrum, \textit{m} = cibus russicus (\emph{пероги})}, et multa genera illōrum -- refertī\footnote{refertus, referta, refertum $\approx$ plēnus} amygdalārum, rubrī, flāvī, et sedent illīc quattuor dīvitēs, et cum aliquis adit, illō dant pirogōs, et iānua continenter\footnote{continenter = sine intermissiōne} aperītur, intrant ad illōs ex viā multī hominēs.
+	Īnsinuāvit puer, repente aperuit iānuam et intrāvit.
+	Ūh, quantum ad illum ululāvērunt et quatiēbant manūs!
+	Ūna mulier celeriter accessit, et posuit in manū illī assem, et illa ipsa aperuit illō iānuam.
+	Quantum ille territus fuit!
+	Et as dē manū illī cecidit et tinnīvit\footnote{tinniō, tinnīs, tinnīvī, tinnītum, tinnīre $\approx$ sonō} illīdēns gradibus:
+	nōn poterat flectere suōs rubrōs digitulōs et tenēre assem.
+	Excucurrit puerulus et celeriter abīvit, quō, et ille nescit.
+	Vult ille dēnuō\footnote{dēnuō = iterum} flēre, et metuit, et currit, currit et in manūs exspirat.
+	Et pavōre\footnote{pavor, pavōris, \textit{m} = timor} percellitur\footnote{percellō, percellis, perculī, perculsum, percellere}, quia subitō ille intellegit sē sōlum esse, et repente, domine!
+	Quid est hoc iterum?
+	Stat multitūdō hominum et mīrantur: trāns vitrum fenestrae sunt trēs pūpae, parvae, vestēs rubrās et viridīs indutae, et sīcut vīvae videntur!
+	Ūnus est senex sedēns et videntur ille magnā violā canere, aliī duo quoque stant et parvīs violīs canunt, et capita sua oscillant, et alius alium cōnspicit, et illōrum labiae moventur, loquuntur, certē loquuntur, -- sed nōn audiuntur ob vitrum.
+	Et prīmum putāvit puerulus, illōs vivōs esse, et cum intellēxit, illās pūpās esse, -- repente rīsit.
+	Numquam vīderat ille tālēs pūpās et nesciēbat illās exsistere!
+	Et multō vult ille flēre, sed pūpae sunt ita iūcundae.
+	Repente illō videntur, aliquis subūculā illum prehendisse:
+	perfidus puer stābat post, et subitō caput illī percussit\footnote{percutiō, percutis, percussī, percussum, percutere}, scidit capitis tegumen, et illum supplantāvit\footnote{supplantō, supplantās, supplantāvī, supplantātum,supplantāre}.
+	Prōcumbit puerulus humī, circum clāmābant, obstupefactus\footnote{obstupefactus, obstupefacta, obstupefactum = necopīnāns deprehensus territusque} fuit ille, exsiluit\footnote{exsiliō, exsilīs, exsiluī, exsilīre} et celerrimē cucurrit, et subitō intrāvit quō et ille nesciēns, in aditum, in ignōtam aulam, -- et post lignōrum struem\footnote{lignōrum struēs, struis, \textit{n}} cōnsīdit: ``Hīc nōn reperient, etiam tenebrae sunt''.
+	
+	Cōnsīdit et complicātus est, et ipse nōn potest spīrāre ob terrōrem, et repente, immō repente, tam valuit: manūs et pedēs dēsiērunt dolēre et tam tepor fuit, tam tepor, sīcut prope camīnum\footnote{camīnus, camīnī, \textit{m} = locus domūs in quō ignis est}; et ecce exsiluit: āh, ille obdormīverat\footnote{obdormīo, obdormīs, obdormīvi, obdormītum, obdormīre, obdormīo $\leftrightarrow$ expergīscor}!
+	Ō, quam grātē\footnote{grātē < grātus, grāta, grātum; $\approx$ bene} est hīc obdormīre: ``Sedēbō hīc et dēnuō vīsam\footnote{vīsō, vīsis, vīsī, vīsum, vīsere = eō ut aspiciam} pūpās, -- cōgitāvit puerulus et arrīsit\footnote{arrīdeō, arrīdēs, arrīsī, arrīsum, arrīdēre}, -- immō vīvae videntur''
+	Et subitō illō audīre videntur, mātrem suam super sē cantiunculam canentem.
+	``Mamma, ego dormiō, āh, quam hīc dormīre grātum!''
+	
+	-- Venī ad me, ad abiētem, puerule, -- subitō susurrāvit\footnote{susurrō, susurrās, susurrāvī, susurrāvit, susurrātum, susurrāre = summissā vōce dīcō} super illum clēmēns vōx.
+	
+	Ille prīmum putāvit, haec mātrem suam esse, sed nōn, nōn est illa;
+	quis est quī illum vōcāvit, ille nōn videt, sed aliquis ad eum incurvātus est et complexus est in tenebrīs, et ille tetendit manum et... repente -- ō, quae lūx! Ō, quae abiēs!
+	Sed haec abiēs nōn est, ille nōndum vīderat tālēs arborēs!
+	Ubi est ille nunc:
+	omnia splendet, omnia fulget et circum sunt pūpae, -- sed nōn, hī sunt puerulī et puellulae, sed tam lūcentes sunt, omnēs illī vertunt prope illum, volant, omnēs ōsculantur illum, tollunt illum, ferunt sēcum, et ille ipse volat, et videt ille: māter cōnspicit illum et rīdet laeta.
+	
+	-- Mamma! Mamma! Āh, quam bene valeō hīc, mamma! -- clāmat illae puerulus, et iterum ōsculātur cum puerīs, et vult ille quam prīmum illīs nārrāre dē pūpīs post specularium.
+	-- Quī estis, puerulī? Quae estis, puellulae? -- interrogat ille, rīdēns et illōs amāns.
+	
+	-- Haec est ``Chrīstī abiēs'', illō respondent illī.
+	-- Apud Chrīstum semper hōc diē abiēs est parvīs puerīs, quibus abiēs sua nōn est... --
+	Et ille cognōvit, puerōs et puellās talēs esse, sīcut sē, puerulī, sed aliquī gelū mortuī sunt in suīs cistīs, in quīs illī dērelictī super gradūs ad forēs peterburgēnsium\footnote{peterburgēns, peterburgēnse = urbis Sanctī Peterburgī} magistrātuum sunt, aliī mortuī sunt apud educātricēs, illīs datī ab orphanotrophīis ut alerentur\sfootnote{Tunc orphanotrophīi dabant educātricibus puerulōs, ut illī alerentur, et illae, magna pars quārum ex Finlandiā erat, prō labōribus suīs accipiēbant pecūniam et vestīmenta. Ut scrībēbant illī temporis ephēmeridēs, plūrimī illōrum puerōrum moriēbantur.}, aliī mortuī sunt apud ūbera siccāta illōrum mātrum, in temporibus samārēnsis\footnote{samarēns, samarēnse = urbis Samārae} annōna\footnote{annōna, annōnae, \textit{f} = tempus in quō cibus carētur}\sfootnote{1873-1874, post aliquōs annōs, in quibus paulum agrī ferēbant, in regiōne samarēnse fuit ``nimis terribile'' annōna.}, aliī mortuī sunt in carrīs tertiī ōrdinis ob fētōrem, et omnēs nunc hīc sunt, omnēs sunt ut angelī, omnēs apud Chrīstum, et ille ipse est inter illōs, tendit ad illōs manūs, et benedīcit illōs et illōrum matrēs quae peccāverunt...
+	Et mātrēs illōrum puerōrum stabant, seorsum\footnote{seorsum $\leftrightarrow$ prope}, et flent; quaeque agnōscit\footnote{agnōscō, agnōscis, agnōvī, agnitum, agnōscere $\approx$ cognōscō} puerulum suum aut puellulam, et illī advolant ad illās et illās ōsculantur, illīs lacrimās suīs manibus dētergunt et ōrant ne fleant, quia illīs hīc tam grātum est...
+	
+	Et infra, postrīdiē māne, iānitorēs invēnērunt parvulum cadāver\footnote{cadāver, cadāveris, \textit{n} = corpus mortuum} incursī et gelū mortuī post lignōrum struem puerulī; repperērunt et illī mātrem...
+	Illa mortua est anteā;
+	ambō sē rūrsus vidērunt apud Dominum Deum in caelō.
+	
+	\vspace{3ex}
+	
+	Cūrnam\footnote{cūrnam = cūr} commentus sum hanc fabulam, quae nōn licet in commūnī\footnote{commūnis, commūne $\approx$ solitus} et ratiōnī cōnsentāneō\footnote{ratiōnī cōnsentāneus, cōnsentānea, cōnsentāneum} diāriō\footnote{diārium, diāriī, \textit{n} = id quod quōque diē scrībitur} esse, etiam scrīptōris?
+	Et pollicitus sum fabulās magna ex parte dē quibus vērē accidērunt!
+	Sed ecce, mihi continenter videntur, haec omnia vērē accidere potuisse, -- id est, id quod accidit in hypogēō et post lignōrum struem, sed dē abiēs Chrīstī -- equidem nesciō, quōmodo vōbīs dīcere, potueritne hoc accidere, an nōn?
+	Ob hanc rem ego scrīptor sum, ut commīniscar.
+	
+\end{linenumbers}
+\end{document}

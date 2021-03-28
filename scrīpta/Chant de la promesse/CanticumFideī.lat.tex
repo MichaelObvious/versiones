@@ -1,0 +1,118 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[italian]{babel}
+\usepackage[top=0.5cm, bottom=1.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{comment}
+\usepackage{csquotes}
+\usepackage{dirtytalk}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setromanfont[BoldFont={Gentium Basic Bold},ItalicFont={Gentium Italic}]{Gentium}
+\usepackage[utf8x]{inputenc}
+\usepackage{microtype}
+\usepackage{multicol}
+\usepackage{titling}
+\usepackage{titlesec}
+
+\title{\textbf{Canticum Fideī}}
+\author{
+	\textit{scrīpsit} Jaques Sevin \and \textit{vertit} Michele Palese
+}
+
+\date{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\thetitle}
+\rhead{\theauthor}
+\cfoot{\thepage}
+
+\newcommand{\red}[1]{{\color{red}  {#1}}}
+
+\newcommand{\vi}{
+	\ver{}
+	\multicolumn{2}{c}{\textbf{\textit{versūs intercalārēs}}}\\
+	\ver{}
+}
+
+\newcommand{\ver}[1]{
+	\multicolumn{2}{c}{
+		\begin{tabular}{l}
+			#1
+		\end{tabular}
+	}\\
+}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	
+	\centering
+	\begin{tabular}{l l}
+		\ver{
+			Cor\textsuperscript{am} omnibus prōmittō\\
+			honōre meō;\\
+			et nunc Tibī mē offerō,\\
+			ō mī Domine.\\
+		}
+		
+		\ver{}
+
+	
+		\ver{
+			\textit{\textbf{Tē sine intermissiōne}}\\
+			\textit{\textbf{magis magisque amābō.}}\\
+			\textit{\textbf{Meam prōtegās fidem,}}\\
+			\textit{\textbf{Domine Iēsū.}}\\
+		}
+		
+		\ver{}
+		\ver{}
+		
+		\footnotesize{\textit{explōrātōrēs}} & \footnotesize{\textit{ducēs}}\\
+		&\\
+		Iūrō mē secūtūrum tē, & Iūrō mē glōriārī,\\
+		ut fidēlis pius; & nostrā fidē;\\
+		et meum tōtum cor Tuās & et illius lūce vīvere,\\
+		ad manūs trādō. & propius ā Tē.\\
+		\vi
+		
+		\ver{}
+		
+		\ver{
+			Patri\textsuperscript{ā} in meā firmiter,\\
+			semper permanēbō.\\
+			Quōque diē vitae meae Tibī,\\
+			fidēliter oboediam.\\
+		}
+		\vi
+		
+		\ver{}
+		
+		\ver{
+			Sum ex Tuīs Apostolīs,\\
+			et cotīdiē\\
+			adiuvār\textsuperscript{e} aliōs volō,\\
+			ob carītātem.\\
+		}
+		\vi
+		
+		\ver{}
+		
+		\ver{
+			Lēx tua summa super nōs,\\
+			iūs sacrum habet.\\
+			Īnfirmus sum, sed amās mē,\\
+			et ego permanēbō.\\
+		}
+		\vi
+		
+		\ver{}
+	
+	
+	\end{tabular}
+	
+\end{document}
