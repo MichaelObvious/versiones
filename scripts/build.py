@@ -1,4 +1,5 @@
 from os import listdir, mkdir
+import subprocess
 from sys import argv,stdout
 from toolbox import println, panic
 
@@ -34,6 +35,8 @@ def main(args: list) -> None:
         build_all(pdf)
     else:
         panic(f"ERROR: unknown target format: {args[0]}")
+    
+    subprocess.run("git clean -xf", shell=True)
 
 if __name__ == '__main__':
     main(argv[1:])
