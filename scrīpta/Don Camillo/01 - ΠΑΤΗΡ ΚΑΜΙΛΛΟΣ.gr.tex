@@ -1,0 +1,44 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{array}
+\usepackage[italian]{babel}
+\usepackage{xcolor}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{microtype}
+\usepackage{titling}
+
+\usepackage{fontspec}
+%\babelfont[polytonicgreek]{rm}{GFS Porson}
+\setromanfont[BoldFont={Gentium Basic Bold},ItalicFont={Gentium Italic}]{GentiumAlt}
+
+\babelprovide[import]{polytonicgreek}
+
+\newcommand{\MyTitle}{ΠΑΤΗΡ ΚΑΜΙΛΛΟΣ}
+
+\title{
+	\Huge{\MyTitle}
+}
+\author{
+	\textit{ἔγραψα} Giovannino Guareschi
+	\and
+	\textit{μετήνεγκα} Michele Palese
+}
+\date{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\MyTitle}
+\rhead{\footnotesize\theauthor}
+\cfoot{\thepage}
+
+\begin{document}
+	\maketitle
+
+	\begin{otherlanguage}{polytonicgreek}
+		Πατὴρ Καμίλλος, ὁ πρωτοπρεσβύτερος τοῦ Ποντεραττο, ἦν ἄνθρωπος μάλα εὐμενῶν.
+		ἦν ἀλλὰ εἷς ἐκ τῶν ἐμφανῶς ἐπγγελλόντων, καὶ
+	\end{otherlanguage}
+\end{document}
