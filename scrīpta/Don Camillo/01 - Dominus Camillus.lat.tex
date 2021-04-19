@@ -50,15 +50,6 @@
 % line stretch
 %\renewcommand{\baselinestretch}{1.73}
 
-%footnotes enabling and disabling
-\newcommand{\sfootnote}[1]{{\EnableFootNotes\footnote{\textit{#1}}}}
-\LetLtxMacro\Oldfootnote\footnote
-\newcommand{\EnableFootNotes}{%
-	\LetLtxMacro\footnote\Oldfootnote%
-}
-\newcommand{\DisableFootNotes}{%
-	\renewcommand{\footnote}[2][]{\relax}
-}
 % footnotes size & font
 \renewcommand\linenumberfont{\normalfont\footnotesize}
 
@@ -69,13 +60,17 @@
 	\maketitle
 	%\break
 	
-	\DisableFootNotes
-	
-	\resetlinenumber
-	
 	Dominus Camillus, archipresbyter vīcī Ponterotto, erat vir summae benignitātis.
 	Sed erat ūnus ex eōrum quī apertē prŏfitentur et, tum cum rēs perplexae sordidaeque accidērunt, in quibus senēs locuplēs et virginēs immixtī erant, dominus Camillus in Missā ōrātiōnem infīnītam comiter incēpit, sed posteā, id temporis cum sānē prīmō ōrdine ūnum ex turpium vīdit, modō victō et ōrātiōne abruptā, pannum super caput Iēsū crucī affīxī altāris maiōris iēcit nē audīret et, manūs in lateribus pōnēns, suō modō ōrātiōnem ad fīnem perdūxit et tam tonāns erat vōx quae ex ōre illīus hominis immāni corporis magnitūdine, et tam magnā dīcēbat, ut tēctum parvae ecclēsiae tremeret.
 	
-	Dominus Camillus scīlicet, tempore ēligendī adventō, tam apertē dē locī prīncipibus sinistrārum partium ōrātiōnibus dīxit ut, ad vesperem, vixdum satis certā lūce, dum reveniēbat ad parochī domum,
+	Dominus Camillus scīlicet, tempore ēligendī adventō, tam apertē dē prīncipibus sinistrārum partium locī ōrātiōnibus dīxit ut, ad vesperem, vixdum satis certā lūce, dum reveniēbat ad parochī domum, magnus prāvusque homō palliō amictus ex saepe exsiliēns ā tergō adorīrētur et, tempus in quō dominus Camillus impediēbātur ā birotā cuius manūbriō suspēnsa erat sarcina in quā septuāgintā ōva inerant nōn dīmittēns, validē tunderet eum pālō, ēvolāns posteā ē cōnspectū ut ā terrā absorptus.
+	
+	Dominus Camillus nihil nēminī dīxit.
+	In parochī domum adventus et ōvīs in tūtō positīs, īvit in ecclēsiam ad Iēsum cōnsulendum, sīcut solēbat cum dubitāret.
+	
+	«Quid faciam?» quaesīvit dominus Camillus.
+	
+	«Pēnicillō dorsum tuum aquā oleō mixtā illine et tacētō» respondit eī Iēsūs ab altāris summitāte.
+	«Laedentibus dōnandum est. Haec est mandātum.»
 	
 \end{document}
